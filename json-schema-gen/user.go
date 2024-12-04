@@ -2,7 +2,6 @@ package main
 
 //go:generate go run generator.go -type=User $GOFILE
 
-// User represents a system user with basic information
 type User struct {
 	ID       int    `json:"id" schema:"required,min=1"`
 	Name     string `json:"name" schema:"required,minLength=2"`
